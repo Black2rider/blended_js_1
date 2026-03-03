@@ -1,0 +1,83 @@
+// Створіть масив styles з елементами 'jazz' і 'blues'
+// Додайте до кінця масиву елемент 'rock-n-roll' за допомогою відповідного методу масивів
+// Знайдіть елемент 'blues' у масиві та замініть його на 'classic', використовуючи JavaScript-код
+
+// Напишіть функцію logItems(array), яка приймає масив як аргумент
+// і виводить у консоль кожен його елемент у форматі:
+// "<номер елемента> - <значення елемента>".
+// Використайте цикл for для перебору елементів масиву.
+// Нумерація елементів повинна починатися з 1 (а не з 0).
+
+// const arr = ['jazz', 'blues'];
+// arr.push('rock-n-roll');
+// let index = arr.indexOf('blues');
+// arr[index] = 'classic';
+
+// function logItems(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(`${i + 1} - ${arr[i]}`);
+//   }
+// }
+// logItems(arr);
+
+// // Напишіть функцію checkLogin(array), яка:
+// // Приймає масив логінів як аргумент.
+// // Запитує ім'я користувача через prompt.
+// // Перевіряє, чи є введене ім'я у переданому масиві.
+// // Якщо ім'я є в масиві – виводить повідомлення через alert: "Welcome, <name>!"
+// // Якщо ім'я відсутнє – виводить повідомлення: "User not found".
+
+// const logins = ['Peter', 'John', 'Igor', 'Sasha'];
+
+// function checkLogin(logins) {
+//   let name = prompt('Введіть імʼя: ');
+//   if (logins.includes(name)) {
+//     return alert(`Welcome, ${name}!`);
+//   }
+//   return alert('User not found');
+// }
+// checkLogin(logins);
+
+// Напишіть функцію caclculateAverage(),
+// яка приймає довільну кількість
+// аргументів і повертає їхнє середнє значення.
+// Додайте перевірку, що аргументи - це числа.
+
+// function caclculateAverage() {
+//   let middle = 0;
+//   let length = arguments.length;
+//   for (const arg of arguments) {
+//     if (typeof arg === 'number') {
+//       middle += arg;
+//     } else {
+//       return 'Присутні не числа';
+//     }
+//   }
+//   return middle / length;
+// }
+// console.log(caclculateAverage(3, 5, 6, 'hhh', 7, 3, 7));
+
+// // Напишіть функцію, яка сумуватиме сусідні числа
+// // і пушитиме їх в новий масив.
+
+// // уточнення: складати необхідно перше число з другим, потім друге - з третім,
+// // третє - з четвертим і так до кінця.
+// // В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
+
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// function sumNum(someArr) {
+//   let newArr = [];
+//   for (let i = 0; i < someArr.length - 1; i++) {
+//     newArr.push(someArr[i] + someArr[i + 1]);
+//   }
+//   return newArr;
+// }
+// console.log(sumNum(someArr));
+
+// Напишіть функцію findSmallestNumber(numbers),
+// яка шукає найменше число в масиві.
+// Додайте перевірку, що функція отримує саме масив, і
+// якщо функція отримує масив - поверніть з функції найменше число,
+// в іншому випадку - поверніть 'Sory, it is not an array!'.
+
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
