@@ -195,17 +195,28 @@
 // яка приймає массив об'єктів (fruits) і рядок з назвою фрукта (fruitName).
 // Функція рахує і повертає загальну вартість фрукта
 // з таким ім'ям, ціною та кількістю з об'єкта.
-
 // Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою
 // назвою фрукта, це також треба урахувати.
 
-const fruits = [
-  { name: 'Яблуко', price: 45, quantity: 7 },
-  { name: 'Апельсин', price: 60, quantity: 4 },
-  { name: 'Банан', price: 125, quantity: 8 },
-  { name: 'Груша', price: 350, quantity: 2 },
-  { name: 'Виноград', price: 440, quantity: 3 },
-  { name: 'Банан', price: 125, quantity: 3 },
-];
+// const fruits = [
+//   { name: 'Яблуко', price: 45, quantity: 7 },
+//   { name: 'Апельсин', price: 60, quantity: 4 },
+//   { name: 'Банан', price: 125, quantity: 8 },
+//   { name: 'Груша', price: 350, quantity: 2 },
+//   { name: 'Виноград', price: 440, quantity: 3 },
+//   { name: 'Банан', price: 125, quantity: 3 },
+// ];
 
-function calcTotalPrice(fruits, fruitName) {}
+// function calcTotalPrice(fruits, fruitName) {
+//   let total = 0;
+//   let sum = 0;
+//   for (const el of fruits) {
+//     if (fruitName === el.name) {
+//       total = el.price * el.quantity;
+//       sum += total;
+//     }
+//   }
+//   return `${fruitName} : ${sum}`;
+// }
+
+// console.log(calcTotalPrice(fruits, 'Банан'));
